@@ -1,0 +1,22 @@
+de:
+  CaseStudy:
+    PLURALNAME: Fallstudie
+    SINGULARNAME: Fallstudien
+    db_Content: Inhalt
+    db_Customer: Kunde
+    db_Date: Datum
+    db_Highlight: Hervorheben
+    db_IsActive: Aktiv
+    db_Summary: Zusammenfassung
+    db_Title: Titel
+    __db_URLSlug: URLSlug
+    __has_one_CaseStudyHolder: 'Case Study Holder'
+  CaseStudyHolder:
+    CaseStudiesFieldTitle: Fallstudien
+    CaseStudiesTabName: Fallstudien
+    DESCRIPTION: 'Holder Seite für Fallstudien'
+    PLURALNAME: 'Fallstudien'
+    SINGULARNAME: 'Fallstudien'
+    has_many_CaseStudies: 'Fallstudien'
+  CaseStudyAdmin:
+    MENUTITLE: Fallstudien

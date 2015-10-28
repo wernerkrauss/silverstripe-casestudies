@@ -1,1 +1,1 @@
-# silverstripe-casestudies
+# silverstripe-team

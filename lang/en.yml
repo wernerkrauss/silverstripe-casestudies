@@ -1,0 +1,22 @@
+en:
+  CaseStudy:
+    __PLURALNAME: 'Case Studies'
+    __SINGULARNAME: 'Case Study'
+    __db_Content: Content
+    __db_Customer: Customer
+    __db_Date: Date
+    __db_Highlight: Highlight
+    __db_IsActive: 'Is Active'
+    __db_Summary: Summary
+    __db_Title: Title
+    __db_URLSlug: URLSlug
+    __has_one_CaseStudyHolder: 'Case Study Holder'
+  CaseStudyHolder:
+    __CaseStudiesFieldTitle: CaseStudies
+    __CaseStudiesTabName: 'Case Studies'
+    __DESCRIPTION: 'Generic content page'
+    __PLURALNAME: 'Case Study Holders'
+    __SINGULARNAME: 'Case Study Holder'
+    __has_many_CaseStudies: 'Case Studies'
+  CaseStudyAdmin:
+    __MENUTITLE: 'Case Studies'
