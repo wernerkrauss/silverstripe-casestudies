@@ -90,9 +90,8 @@ class CaseStudy extends DataObject {
     public function Link() {
         if (!$this->CaseStudyHolderID) return;
 
-        $holder = $this->CaseStudyHolder()->Link();
-        $slug = $this->URLSlug;
-        $link = Controller::join_links($holder, $slug);
+		$slug = $this->URLSlug;
+		$link = $this->CaseStudyHolder()->Link($slug);
 
 		$this->extend('UpdateLink', $link);
 
