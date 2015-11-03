@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by IntelliJ IDEA.
- * User: Werner M. Krauﬂ <werner.krauss@netwerkstatt.at>
+ * User: Werner M. Krau√ü <werner.krauss@netwerkstatt.at>
  * Date: 20.10.2015
  * Time: 18:02
  */
@@ -25,9 +25,7 @@ class CaseStudyHolder extends Page {
 
 	private static $plural_name = 'Case Study Holders';
 
-	private static $summary_fields = array();
-
-	private static $searchable_fields = array();
+	private static $icon = 'case-studies/images/trophy.png';
 
 	public function getCMSFields() {
 		$self =& $this;

@@ -13,5 +13,7 @@ if (class_exists('SinglePageAdmin')) {
 		private static $tree_class = 'CaseStudyHolder';
 		private static $url_segment = 'case-studies';
 
+		private static $menu_icon = 'case-studies/images/trophy.png';
+
 	}
 }
