@@ -28,7 +28,7 @@ class CaseStudy extends DataObject {
     );
 
 	private static $db = array(
-        'Title' => 'Varchar',
+        'Title' => 'Varchar(255)',
         'Date' => 'Date',
         'Summary' => 'Text',
         'Content' => 'HTMLText',
