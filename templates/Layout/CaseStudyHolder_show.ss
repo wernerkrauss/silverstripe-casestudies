@@ -14,9 +14,12 @@
 
                     <p>$Customer</p>
 
-                    <p></p>
-
                 <% end_with %>
+
+                <p>
+                    <a href="$Link"><%t CaseStudyHolder_Show.BackToOverview 'Back to overview' %></a>
+                </p>
+				
             </div>
         </div>
     </div>

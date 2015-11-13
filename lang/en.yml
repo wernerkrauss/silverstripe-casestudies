@@ -18,5 +18,7 @@ en:
     __PLURALNAME: 'Case Study Holders'
     __SINGULARNAME: 'Case Study Holder'
     __has_many_CaseStudies: 'Case Studies'
+  CaseStudyHolderShow:
+    BackToOverview: 'Back to overview'
   CaseStudyAdmin:
     __MENUTITLE: 'Case Studies'

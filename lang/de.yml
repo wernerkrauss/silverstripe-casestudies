@@ -18,5 +18,7 @@ de:
     PLURALNAME: 'Fallstudien'
     SINGULARNAME: 'Fallstudien'
     has_many_CaseStudies: 'Fallstudien'
+  CaseStudyHolder_Show:
+    BackToOverview: 'Zurück zur Übersicht'
   CaseStudyAdmin:
     MENUTITLE: Fallstudien
