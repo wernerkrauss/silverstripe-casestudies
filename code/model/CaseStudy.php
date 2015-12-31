@@ -21,13 +21,14 @@
  * @mixin Slug("Title", null, true)
  * EndGeneratedWithDataObjectAnnotator
  */
-class CaseStudy extends DataObject {
+class CaseStudy extends DataObject
+{
 
     private static $extensions = array(
         'Slug("Title", null, true)', //adds URLSlug field and some logic
     );
 
-	private static $db = array(
+    private static $db = array(
         'Title' => 'Varchar(255)',
         'Date' => 'Date',
         'Summary' => 'Text',
@@ -67,16 +68,18 @@ class CaseStudy extends DataObject {
         'URLSlug'
     ];
 
-    public function getCMSFields() {
+    public function getCMSFields()
+    {
         $fields = parent::getCMSFields();
         $fields->removeByName(['CaseStudyHolderID']);
 
-		$this->extend('updateCMSFields', $fields);
+        $this->extend('updateCMSFields', $fields);
 
-		return $fields;
+        return $fields;
     }
 
-    public function onBeforeWrite() {
+    public function onBeforeWrite()
+    {
         if (!$this->Date) {
             $this->Date = date('Y-m-d');
         }
@@ -87,14 +90,17 @@ class CaseStudy extends DataObject {
      * Link to this DO
      * @return string
      */
-    public function Link() {
-        if (!$this->CaseStudyHolderID) return;
+    public function Link()
+    {
+        if (!$this->CaseStudyHolderID) {
+            return;
+        }
 
-		$slug = $this->URLSlug;
-		$link = $this->CaseStudyHolder()->Link($slug);
+        $slug = $this->URLSlug;
+        $link = $this->CaseStudyHolder()->Link($slug);
 
-		$this->extend('UpdateLink', $link);
+        $this->extend('UpdateLink', $link);
 
-		return $link;
-	}
+        return $link;
+    }
 }
