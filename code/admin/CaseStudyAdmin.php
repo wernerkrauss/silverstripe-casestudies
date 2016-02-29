@@ -7,13 +7,13 @@
  * Time: 15:21
  */
 if (class_exists('SinglePageAdmin')) {
-	class CaseStudyAdmin extends SinglePageAdmin {
+    class CaseStudyAdmin extends SinglePageAdmin
+    {
 
-		private static $menu_title = 'Case Studies';
-		private static $tree_class = 'CaseStudyHolder';
-		private static $url_segment = 'case-studies';
+        private static $menu_title = 'Case Studies';
+        private static $tree_class = 'CaseStudyHolder';
+        private static $url_segment = 'case-studies';
 
-		private static $menu_icon = 'case-studies/images/trophy.png';
-
-	}
+        private static $menu_icon = 'case-studies/images/trophy.png';
+    }
 }
